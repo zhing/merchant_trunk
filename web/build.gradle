@@ -4,5 +4,4 @@ dependencies {
     compile project(':helloworld')
     compile project(':model')
     compile project(':service')
-    compile("com.fasterxml.jackson.core:jackson-databind")
 }

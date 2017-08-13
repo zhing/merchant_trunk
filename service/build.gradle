@@ -3,3 +3,7 @@ dependencies {
     compile project(':helloworld')
     compile project(':model')
 }
+
+bootRepackage {
+    enabled = false
+}
