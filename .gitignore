@@ -1,0 +1,16 @@
+#
+#folders
+#
+/.gradle
+/build
+/helloworld/out
+/helloworld/build
+/model/out
+/model/build
+/service/out
+/service/build
+/web/out
+/web/build
+
+#files
+
