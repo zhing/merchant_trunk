@@ -2,6 +2,7 @@
 #folders
 #
 /.gradle
+/.idea
 /build
 /helloworld/out
 /helloworld/build
@@ -13,4 +14,3 @@
 /web/build
 
 #files
-.idea/workspace.xml
