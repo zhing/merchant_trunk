@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="helloworld_main" target="1.8" />
+      <module name="helloworld_test" target="1.8" />
+      <module name="merchant_main" target="1.8" />
+      <module name="merchant_test" target="1.8" />
+      <module name="model_main" target="1.8" />
+      <module name="model_test" target="1.8" />
+      <module name="service_main" target="1.8" />
+      <module name="service_test" target="1.8" />
+      <module name="web_main" target="1.8" />
+      <module name="web_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

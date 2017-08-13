@@ -1,0 +1,5 @@
+
+dependencies {
+    compile project(':helloworld')
+    compile project(':model')
+}
