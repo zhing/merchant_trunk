@@ -15,36 +15,27 @@ public class UserInfo {
     @JsonProperty
     private String age;
 
-    private UserInfo(Builder builder) {
-        this.id = builder.id;
-        this.name = builder.name;
-        this.age = builder.age;
+    public Long getId() {
+        return id;
     }
 
-    public static class Builder {
-        private Long id;
-        private String name;
-        private String age;
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-        public Builder(){}
+    public String getName() {
+        return name;
+    }
 
-        public Builder withId(Long id) {
-            this.id = id;
-            return this;
-        }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-        public Builder withName(String name) {
-            this.name = name;
-            return this;
-        }
+    public String getAge() {
+        return age;
+    }
 
-        public Builder withAge(String age) {
-            this.age = age;
-            return this;
-        }
-
-        public UserInfo build() {
-            return new UserInfo(this);
-        }
+    public void setAge(String age) {
+        this.age = age;
     }
 }
