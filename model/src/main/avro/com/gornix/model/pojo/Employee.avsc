@@ -1,0 +1,27 @@
+{
+    "type": "record",
+    "name": "Employee",
+    "namespace": "com.gornix.model.pojo",
+    "fields": [
+        {
+            "name": "firstName",
+            "type": "string"
+        },
+        {
+            "name": "lastName",
+            "type": "string"
+        },
+        {
+            "name": "age",
+            "type": "int"
+        },
+        {
+            "name": "phoneNumber",
+            "type": "string"
+        },
+        {
+            "name": "salary",
+            "type": "com.gornix.model.pojo.Salary"
+        }
+    ]
+}

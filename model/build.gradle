@@ -1,7 +1,23 @@
-dependencies {
+plugins {
+    id "com.commercehub.gradle.plugin.avro-base" version "0.9.0"
+}
 
+dependencies {
+    compile "org.apache.avro:avro:1.8.1"
+}
+
+avro {
+    createSetters = false
+    fieldVisibility = "PRIVATE"
 }
 
 bootRepackage {
     enabled = false
 }
+
+task generateAvro(type: com.commercehub.gradle.plugin.avro.GenerateAvroJavaTask) {
+    source("src/main/avro")
+    outputDir = file("src/main/codegen")
+}
+
+compileJava.source(generateAvro.outputs)

@@ -1,0 +1,15 @@
+{
+    "type": "record",
+    "name": "Salary",
+    "namespace": "com.gornix.model.pojo",
+    "fields": [
+        {
+            "name": "serialNo",
+            "type": "long"
+        },
+        {
+            "name": "amount",
+            "type": "string"
+        }
+    ]
+}

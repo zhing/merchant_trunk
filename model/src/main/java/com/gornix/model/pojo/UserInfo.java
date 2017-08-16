@@ -1,12 +1,11 @@
 package com.gornix.model.pojo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
-
+import java.io.Serializable;
 /*
   refer: http://blog.lifw.org/post/24921108
  */
-public class UserInfo {
+public class UserInfo implements Serializable {
 
     @JsonProperty
     private Long id;
