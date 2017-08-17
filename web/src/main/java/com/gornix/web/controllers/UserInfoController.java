@@ -14,7 +14,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/user")
-@ControllerAdvice
 public class UserInfoController {
 
     @Autowired
