@@ -34,8 +34,8 @@ public class UserInfoController {
     public @AvroResponseBody Employee fetchAvroTest() {
         return Employee.newBuilder()
                 .setFirstName("Qing").setLastName("Zhang")
-                .setAge(15).setPhoneNumber("123456789")
-                .setSalary(Salary.newBuilder().setSerialNo(12).setAmount("$10000/m").build())
+                .setAge(15)//.setPhoneNumber("123456789")
+                .setSalary(Salary.newBuilder().setSerialNo(12).build())
                 .build();
     }
 

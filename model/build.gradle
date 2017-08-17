@@ -7,7 +7,7 @@ dependencies {
 }
 
 avro {
-    createSetters = false
+//    createSetters = false
     fieldVisibility = "PRIVATE"
 }
 

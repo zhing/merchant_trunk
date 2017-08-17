@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Salary extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6581373163580137512L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Salary\",\"namespace\":\"com.gornix.model.pojo\",\"fields\":[{\"name\":\"serialNo\",\"type\":\"long\"},{\"name\":\"amount\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}");
+  private static final long serialVersionUID = 29940993965471527L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Salary\",\"namespace\":\"com.gornix.model.pojo\",\"fields\":[{\"name\":\"serialNo\",\"type\":\"long\"},{\"name\":\"amount\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
    private long serialNo;
    private java.lang.String amount;
@@ -61,6 +61,13 @@ public class Salary extends org.apache.avro.specific.SpecificRecordBase implemen
     return serialNo;
   }
 
+  /**
+   * Sets the value of the 'serialNo' field.
+   * @param value the value to set.
+   */
+  public void setSerialNo(java.lang.Long value) {
+    this.serialNo = value;
+  }
 
   /**
    * Gets the value of the 'amount' field.
@@ -70,6 +77,13 @@ public class Salary extends org.apache.avro.specific.SpecificRecordBase implemen
     return amount;
   }
 
+  /**
+   * Sets the value of the 'amount' field.
+   * @param value the value to set.
+   */
+  public void setAmount(java.lang.String value) {
+    this.amount = value;
+  }
 
   /**
    * Creates a new Salary RecordBuilder.

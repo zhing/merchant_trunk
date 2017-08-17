@@ -9,7 +9,8 @@
         },
         {
             "name": "amount",
-            "type": "string"
+            "type": ["null", "string"],
+            "default": null
         }
     ]
 }

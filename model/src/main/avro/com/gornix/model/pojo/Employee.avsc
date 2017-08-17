@@ -17,7 +17,8 @@
         },
         {
             "name": "phoneNumber",
-            "type": "string"
+            "type": ["null", "string"],
+            "default": null
         },
         {
             "name": "salary",

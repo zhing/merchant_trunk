@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Employee extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 3812621343544167741L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Employee\",\"namespace\":\"com.gornix.model.pojo\",\"fields\":[{\"name\":\"firstName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"lastName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"age\",\"type\":\"int\"},{\"name\":\"phoneNumber\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"salary\",\"type\":{\"type\":\"record\",\"name\":\"Salary\",\"fields\":[{\"name\":\"serialNo\",\"type\":\"long\"},{\"name\":\"amount\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}}]}");
+  private static final long serialVersionUID = -6549446780759350005L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Employee\",\"namespace\":\"com.gornix.model.pojo\",\"fields\":[{\"name\":\"firstName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"lastName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"age\",\"type\":\"int\"},{\"name\":\"phoneNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"salary\",\"type\":{\"type\":\"record\",\"name\":\"Salary\",\"fields\":[{\"name\":\"serialNo\",\"type\":\"long\"},{\"name\":\"amount\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
    private java.lang.String firstName;
    private java.lang.String lastName;
@@ -76,6 +76,13 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
     return firstName;
   }
 
+  /**
+   * Sets the value of the 'firstName' field.
+   * @param value the value to set.
+   */
+  public void setFirstName(java.lang.String value) {
+    this.firstName = value;
+  }
 
   /**
    * Gets the value of the 'lastName' field.
@@ -85,6 +92,13 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
     return lastName;
   }
 
+  /**
+   * Sets the value of the 'lastName' field.
+   * @param value the value to set.
+   */
+  public void setLastName(java.lang.String value) {
+    this.lastName = value;
+  }
 
   /**
    * Gets the value of the 'age' field.
@@ -94,6 +108,13 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
     return age;
   }
 
+  /**
+   * Sets the value of the 'age' field.
+   * @param value the value to set.
+   */
+  public void setAge(java.lang.Integer value) {
+    this.age = value;
+  }
 
   /**
    * Gets the value of the 'phoneNumber' field.
@@ -103,6 +124,13 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
     return phoneNumber;
   }
 
+  /**
+   * Sets the value of the 'phoneNumber' field.
+   * @param value the value to set.
+   */
+  public void setPhoneNumber(java.lang.String value) {
+    this.phoneNumber = value;
+  }
 
   /**
    * Gets the value of the 'salary' field.
@@ -112,6 +140,13 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
     return salary;
   }
 
+  /**
+   * Sets the value of the 'salary' field.
+   * @param value the value to set.
+   */
+  public void setSalary(com.gornix.model.pojo.Salary value) {
+    this.salary = value;
+  }
 
   /**
    * Creates a new Employee RecordBuilder.
